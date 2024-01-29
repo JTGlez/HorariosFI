@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 import os
 
-# Lista de claves
+# Lista de claves: añade aquí las claves de las carreras y sus especialidades
 careers_keys = ['2232', '2221', '2220', '2223', '2222', '2228', '2231', '2225', '2224', '2229', '2227', '2226', '2230', '2233', '2234']
 
 # Crear el driver
@@ -29,6 +29,9 @@ for key in careers_keys:
         course_name = row.find_element(By.XPATH, ".//td[@class='CellDat']").text
         key = input_field.get_attribute('value')
         df = df._append({'course_name': course_name, 'key': key}, ignore_index=True)
+
+# Delete the duplicates inside the DataFrame checking the columns 'course_name' and 'key'
+df.drop_duplicates(subset=['course_name', 'key'], inplace=True)
 
 if not os.path.exists('webscraping/scripts/keys/results'):
     os.makedirs('webscraping/scripts/keys/results')

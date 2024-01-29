@@ -1,0 +1,32 @@
+Could not add course: MEXICO NACION MULTICULTURAL
+Could not add course: SEM. SOCIOHUMANISTICO: HIST PROSP IN
+Could not add course: TEMAS SELECTOS
+Could not add course: GEOMECANICA
+Could not add course: GEOQUIMICA ORGANICA
+Could not add course: MOVILIDAD I
+Could not add course: MOVILIDAD II
+Could not add course: MOVILIDAD III
+Could not add course: MOVILIDAD IV
+Could not add course: MOVILIDAD V
+Could not add course: MOVILIDAD VI
+Could not add course: MOVILIDAD VII
+Could not add course: MOVILIDAD VIII
+Could not add course: MOVILIDAD IX
+Could not add course: MOVILIDAD X
+Could not add course: MOVILIDAD XI
+Could not add course: MATERIALES II
+Could not add course: INGENIERIA DE SUPERFICIES
+Could not add course: INGENIERIA AUTOMOTRIZ I
+Could not add course: TEMAS SEL. DE INGENIERIA MECANICA II
+Could not add course: TEMAS SEL.ING.MATERIALES-MANUFAC. I
+Could not add course: INTRODUC. SISTEMAS NO LINEALES
+Could not add course: PREANALISIS Y DISE�O PROYEC.TOPOGRAF
+Could not add course: MODELADO BASADO EN DISE�O
+Could not add course: ADMON.DE LA INNOVACION TECNOLOGICA
+Could not add course: FORMACION DE DIRECTIVOS
+Could not add course: DESARROLLO DE PROYECTOS TECNOLOGIC.
+Could not add course: EMPRENDIMIENTO EN INCUBADORAS DE TEC
+Could not add course: FUMDAMENTOS D INTELIGENCIA EMOCIONAL
+Could not add course: PROPIEDAD INTELECTUAL
+Could not add course: RELACIONES Y COMERCIO INTERNACIONAL
+Could not add course: TEMAS SELEC.CIENCIAS ECONOM.ADMVAS.
