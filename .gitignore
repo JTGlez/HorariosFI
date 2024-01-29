@@ -1,1 +1,4 @@
 /chromedriver.exe
+
+# Ignore results folder
+results/
