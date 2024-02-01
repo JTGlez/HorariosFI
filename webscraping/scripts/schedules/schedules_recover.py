@@ -58,7 +58,8 @@ for key in courses_and_key:
     rows_list = [row for row in rows_list if row]
 
     # Search for a row without the first 3 td elements (we know that it's a sub-schedule from the same course).
-    index = next((i for i, x in enumerate(rows_list) if len(x) <= 3 ), None)
+    # we could have a row with the form [ "L", '17:00 a 19:00', 'Lun, Mie', 'Y001' ] (Included lab) or ['17:00 a 19:00', 'Lun, Mie', 'Y001'] (Sub Theory Schedule)
+    index = next((i for i, x in enumerate(rows_list) if len(x) <= 4 ), None)
 
     while index is not None:
         # Get the previous list
@@ -75,7 +76,7 @@ for key in courses_and_key:
         rows_list[index] = new_list
         
         # Search for the next index of the list where the row is of 3 elements or less
-        index = next((i for i, x in enumerate(rows_list) if len(x) <= 3 and i > index), None)
+        index = next((i for i, x in enumerate(rows_list) if len(x) <= 4 and i > index), None)
 
     df = pd.DataFrame(rows_list)
 
