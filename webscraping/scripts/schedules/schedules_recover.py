@@ -57,20 +57,25 @@ for key in courses_and_key:
     # Delete the empty elements from rows_list
     rows_list = [row for row in rows_list if row]
 
-    index = next((i for i, x in enumerate(rows_list) if x[0] == 'L'), None)
+    # Search for a row without the first 3 td elements (we know that it's a sub-schedule from the same course).
+    index = next((i for i, x in enumerate(rows_list) if len(x) <= 3 ), None)
 
     while index is not None:
         # Get the previous list
         prev_list = rows_list[index - 1]
         
         # Create a new list that contains the first three elements of the previous list and the elements of the original list
-        new_list = prev_list[:3] + rows_list[index]
+        if (rows_list[index][0] == 'L'):
+            new_list = prev_list[:3] + rows_list[index]
+        else: 
+            new_list = prev_list[:3] + rows_list[index]
+            new_list.insert(3, "T")
         
         # Replace the original list with the new list
         rows_list[index] = new_list
         
-        # Search for the next index of the list that starts with 'L'
-        index = next((i for i, x in enumerate(rows_list) if x[0] == 'L' and i > index), None)
+        # Search for the next index of the list where the row is of 3 elements or less
+        index = next((i for i, x in enumerate(rows_list) if len(x) <= 3 and i > index), None)
 
     df = pd.DataFrame(rows_list)
 
